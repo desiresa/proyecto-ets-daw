@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>tienda</artifactId>
-    <groupId>es.iespuerto.tienda</groupId>
+    <artifactId>proyecto-ets-daw</artifactId>
+    <groupId>es.iespuerto.ets</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>logica</artifactId>
 
-  <name>Logica del proyecto Banco</name>
+  <name>modulo-logica</name>
 
   <url>${web}</url>
 

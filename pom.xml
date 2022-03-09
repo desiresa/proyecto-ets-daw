@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   
-  <groupId>es.iespuerto.tienda</groupId>
-  <artifactId>tienda</artifactId>
+  <groupId>es.iespuerto.ets</groupId>
+  <artifactId>proyecto-ets-daw</artifactId>
   <version>1.0-SNAPSHOT</version>
         
   <packaging>pom</packaging>
         
-  <name>Parent del proyecto tienda</name>
+  <name>Parent del proyecto ETS DAW</name>
 
   <url>${web}</url>
         
@@ -17,7 +17,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
-    <web>http://www.tiendaartesania.com</web>
+    <web>https://github.com/desiresa/proyecto-ets-daw</web>
   </properties>
         
   
