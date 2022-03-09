@@ -9,7 +9,6 @@
 
   <artifactId>presentacion</artifactId>
 
-
 <name>modulo-presentacion</name>
   <url>${web}</url>
  
