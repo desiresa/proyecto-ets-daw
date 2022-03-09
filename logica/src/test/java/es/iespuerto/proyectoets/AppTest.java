@@ -1,4 +1,4 @@
-package es.iespuerto.tienda;
+package es.iespuerto.proyectoets;
 
 import static org.junit.Assert.assertTrue;
 

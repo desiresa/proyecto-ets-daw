@@ -1,4 +1,4 @@
-package es.iespuerto.tienda;
+package es.iespuerto.proyectoets;
 
 /**
  * Hello world!
