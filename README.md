@@ -4,4 +4,4 @@
 
 Aqui va la descripción
 
-![url](https://github.com/desiresa/proyecto-ets-daw/wiki)
+![Más información](https://github.com/desiresa/proyecto-ets-daw/wiki)
