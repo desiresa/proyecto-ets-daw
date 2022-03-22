@@ -1,7 +1,13 @@
-# proyecto-ets-daw 
+<div align="justify">
+  
+# Proyecto ETS DAW: Gestor DD
+  
+<div align="center">
 
-### Descripción
+![Logotipo Gestor DD](https://raw.githubusercontent.com/desiresa/proyecto-ets-daw/main/imagenes/logotipo.png)
+  
+</div>
 
-Aqui va la descripción
-
-![Más información](https://github.com/desiresa/proyecto-ets-daw/wiki)
+➡ Para obtener más información sobre el proyecto, haz clic [aquí](https://github.com/desiresa/proyecto-ets-daw/wiki).
+  
+</div>
