@@ -7,9 +7,10 @@ package es.iespuerto.diegodesire;
  * @author Mª Desire Sanchez Alvarez
  */
 
-public class Proveedor {
-    private String CIF;
-    private String nombre;
+public class Proveedor extends Producto{
+    private String codProveedor;
+    private String cifProv;
+    private String nombreProveedor;
     private String direccion;
     private String telefono;
 
@@ -23,52 +24,52 @@ public class Proveedor {
     /**
      * Metodo constructor parametrizado
      * 
-     * @param CIF       CIF del proveedor
-     * @param nombre    Nombre del proveedor
-     * @param direccion Direccion del proveedor
-     * @param telefono  Telefono del proveedor
+     * @param cifProv         cifProv del proveedor
+     * @param nombreProveedor nombreProveedor del proveedor
+     * @param direccion       Direccion del proveedor
+     * @param telefono        Telefono del proveedor
      */
-    public Proveedor(String CIF, String nombre, String direccion, String telefono) {
-        this.CIF = CIF;
-        this.nombre = nombre;
+    public Proveedor(String cifProv, String nombreProveedor, String direccion, String telefono) {
+        this.cifProv = cifProv;
+        this.nombreProveedor = nombreProveedor;
         this.direccion = direccion;
         this.telefono = telefono;
     }
 
     /**
-     * Metodo que regresa el CIF del proveedor
+     * Metodo que regresa el cifProv del proveedor
      * 
-     * @return Regresa el CIF del proveedor
+     * @return Regresa el cifProv del proveedor
      */
-    public String getCIF() {
-        return CIF;
+    public String getcifProv() {
+        return cifProv;
     }
 
     /**
-     * Establece el CIF del proveedor
+     * Establece el cifProv del proveedor
      * 
-     * @param CIF CIF del proveedor
+     * @param cifProv cifProv del proveedor
      */
-    public void setCIF(String CIF) {
-        this.CIF = CIF;
+    public void setcifProv(String cifProv) {
+        this.cifProv = cifProv;
     }
 
     /**
-     * Metodo que regresa el nombre del proveedor
+     * Metodo que regresa el nombreProveedor del proveedor
      * 
-     * @return Regresa el nombre del proveedor
+     * @return Regresa el nombreProveedor del proveedor
      */
-    public String getNombre() {
-        return nombre;
+    public String getnombreProveedor() {
+        return nombreProveedor;
     }
 
     /**
-     * Establece el nombre del proveedor
+     * Establece el nombreProveedor del proveedor
      * 
-     * @param nombre Nombre del proveedor
+     * @param nombreProveedor nombreProveedor del proveedor
      */
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setnombreProveedor(String nombreProveedor) {
+        this.nombreProveedor = nombreProveedor;
     }
 
     /**

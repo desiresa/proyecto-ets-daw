@@ -11,12 +11,12 @@ package es.iespuerto.diegodesire;
 
 public class Producto {
     private String codProducto;
-    private Almacen codAlm;
+    private Almacen codAlmacen;
     private String nombre;
     private String descripcion;
-    private Integer cantDisp;
-    private Double precioCoste;
-    private Double precioVenta;
+    private int cantDisp;
+    private double precioCoste;
+    private double precioVenta;
     private Proveedor codProveedor;
 
     /**
@@ -30,18 +30,18 @@ public class Producto {
      * Metodo constructor parametrizado
      * 
      * @param codProducto  Codigo de identificacion del producto
-     * @param codAlm       Codigo de identificacion en el almacen
+     * @param codAlmacen       Codigo de identificacion en el almacen
      * @param nombre       Nombre del producto
      * @param descripcion  Descripcion del producto
      * @param cantDisp     Cantidad disponible en el almacen
-     * @param precioCoste  Precio coste del producto
-     * @param precioVenta  Precio de venta del producto
+     * @param precioCoste  Precio coste del producto segun el proveedor
+     * @param precioVenta  Precio de venta de nuestro producto
      * @param codProveedor Codigo de identificacion del proveedor
      */
-    public Producto(String codProducto, Almacen codAlm, String nombre, String descripcion, Integer cantDisp,
-            Double precioCoste, Double precioVenta, Proveedor codProveedor) {
+    public Producto(String codProducto, Almacen codAlmacen, String nombre, String descripcion, int cantDisp,
+            double precioCoste, double precioVenta, Proveedor codProveedor) {
         this.codProducto = codProducto;
-        this.codAlm = codAlm;
+        this.codAlmacen = codAlmacen;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.cantDisp = cantDisp;
@@ -55,7 +55,7 @@ public class Producto {
      * 
      * @return Regresa el Codigo del producto
      */
-    public String getCodProducto() {
+    public String getcodProducto() {
         return codProducto;
     }
 
@@ -64,27 +64,10 @@ public class Producto {
      * 
      * @param codProducto Codigo del producto
      */
-    public void setCodProducto(String codProducto) {
+    public void setcodProducto(String codProducto) {
         this.codProducto = codProducto;
     }
 
-    /**
-     * Metodo que regresa el codigo del almacen
-     * 
-     * @return Regresa el Codigo del almacen
-     */
-    public Almacen getCodAlm() {
-        return codAlm;
-    }
-
-    /**
-     * Establece el codigo del almacen
-     * 
-     * @param codAlm Codigo del almacen
-     */
-    public void setCodAlm(Almacen codAlm) {
-        this.codAlm = codAlm;
-    }
 
     /**
      * Metodo que regresa el nombre del producto
@@ -127,7 +110,7 @@ public class Producto {
      * 
      * @return Regresa la cantidad disponible
      */
-    public Integer getCantDisp() {
+    public int getCantDisp() {
         return cantDisp;
     }
 
@@ -136,7 +119,7 @@ public class Producto {
      * 
      * @param cantDisp Cantidad disponible
      */
-    public void setCantDisp(Integer cantDisp) {
+    public void setCantDisp(int cantDisp) {
         this.cantDisp = cantDisp;
     }
 
@@ -145,7 +128,7 @@ public class Producto {
      * 
      * @return Regresa precio coste del producto
      */
-    public Double getPrecioCoste() {
+    public double getPrecioCoste() {
         return precioCoste;
     }
 
@@ -154,7 +137,7 @@ public class Producto {
      * 
      * @param precioCoste Precio coste del producto
      */
-    public void setPrecioCoste(Double precioCoste) {
+    public void setPrecioCoste(double precioCoste) {
         this.precioCoste = precioCoste;
     }
 
@@ -163,7 +146,7 @@ public class Producto {
      * 
      * @return Regresa precio venta del producto
      */
-    public Double getPrecioVenta() {
+    public double getPrecioVenta() {
         return precioVenta;
     }
 
@@ -172,26 +155,8 @@ public class Producto {
      * 
      * @param precioVenta Precio venta del producto
      */
-    public void setPrecioVenta(Double precioVenta) {
+    public void setPrecioVenta(double precioVenta) {
         this.precioVenta = precioVenta;
-    }
-
-    /**
-     * Metodo que regresa el codigo del proveedor
-     * 
-     * @return Regresa el codigo del proveedor
-     */
-    public Proveedor getCodProveedor() {
-        return codProveedor;
-    }
-
-    /**
-     * Establece el codigo del proveedor
-     * 
-     * @param codProveedor Codigo del proveedor
-     */
-    public void setCodProveedor(Proveedor codProveedor) {
-        this.codProveedor = codProveedor;
     }
 
 }

@@ -1,6 +1,7 @@
 package es.iespuerto.diegodesire;
 
-import java.util.Date;
+import java.time.*;
+
 
 /**
  * Esta clase contiene los atributos y metodos de un Almacen
@@ -14,11 +15,12 @@ import java.util.Date;
 public class Pedido {
     private String codigoPedido;
     private Producto codProducto;
+    private Producto precioCoste;
     private Proveedor codProveedor;
-    private Date fechaPedido;
-    private Integer cantidad;
-    private Double total;
-    private Boolean pagado;
+    private String fechaPedido;
+    private int cantidad;
+    private double total;
+    private boolean pagado=false;
 
     /**
      * Metodo constructor por defecto
@@ -27,21 +29,26 @@ public class Pedido {
 
     }
 
+
     /**
      * Metodo constructor parametrizado
      * 
      * @param codigoPedido Codigo de identificacion del pedido
      * @param codProducto  Codigo de identificacion del producto
+     * @param precioCoste  Precios coste del producto
      * @param codProveedor Codigo de identificacion del proveedor
-     * @param fechaPedido  Fecha de realizacion del pedido
+     * @param fecha  Fecha de realizacion del pedido
      * @param cantidad     Cantidad del pedido
      * @param total        Precio total del pedido
      * @param pagado       Si el pedido esta pagado o no
      */
-    public Pedido(String codigoPedido, Producto codProducto, Proveedor codProveedor, Date fechaPedido, Integer cantidad,
-            Double total, Boolean pagado) {
+    public Pedido(String codigoPedido, Producto codProducto,Producto precioCoste, Proveedor codProveedor,
+            String fechaPedido, int cantidad,
+            double total, Boolean pagado) {
+        super();
         this.codigoPedido = codigoPedido;
         this.codProducto = codProducto;
+        this.precioCoste= precioCoste;
         this.codProveedor = codProveedor;
         this.fechaPedido = fechaPedido;
         this.cantidad = cantidad;
@@ -67,48 +74,13 @@ public class Pedido {
         this.codigoPedido = codigoPedido;
     }
 
-    /**
-     * Metodo que regresa el codigo del producto
-     * 
-     * @return Regresa el codigo del producto
-     */
-    public Producto getCodProducto() {
-        return codProducto;
-    }
-
-    /**
-     * Establece el codigo del producto
-     * 
-     * @param codProducto Codigo del producto
-     */
-    public void setCodProducto(Producto codProducto) {
-        this.codProducto = codProducto;
-    }
-
-    /**
-     * Metodo que regresa el codigo del proveedor
-     * 
-     * @return Regresa el codigo del proveedor
-     */
-    public Proveedor getCodProveedor() {
-        return codProveedor;
-    }
-
-    /**
-     * Establece el codigo del proveedor
-     * 
-     * @param codProveedor Codigo del proveedor
-     */
-    public void setCodProveedor(Proveedor codProveedor) {
-        this.codProveedor = codProveedor;
-    }
 
     /**
      * Metodo que regresa la fecha del pedido
      * 
      * @return Regresa la fecha del pedido
      */
-    public Date getFechaPedido() {
+    public String getFechaPedido() {
         return fechaPedido;
     }
 
@@ -117,7 +89,7 @@ public class Pedido {
      * 
      * @param fechaPedido Fecha del pedido
      */
-    public void setFechaPedido(Date fechaPedido) {
+    public void setFechaPedido(String fechaPedido) {
         this.fechaPedido = fechaPedido;
     }
 
@@ -126,7 +98,7 @@ public class Pedido {
      * 
      * @return Regresa la cantidad del pedido
      */
-    public Integer getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
@@ -135,7 +107,7 @@ public class Pedido {
      * 
      * @param cantidad Cantidad del pedido
      */
-    public void setCantidad(Integer cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
@@ -144,17 +116,8 @@ public class Pedido {
      * 
      * @return Regresa el total del pedido
      */
-    public Double getTotal() {
-        return total;
-    }
-
-    /**
-     * Establece el total del pedido
-     * 
-     * @param total Total del pedido
-     */
-    public void setTotal(Double total) {
-        this.total = total;
+    public double getTotal(double precioCoste, int cantidad) {
+        return precioCoste*cantidad;
     }
 
     /**

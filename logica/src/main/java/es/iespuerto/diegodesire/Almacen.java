@@ -5,14 +5,14 @@ package es.iespuerto.diegodesire;
  * 
  * @version 1.0 20/03/2022
  * @author Mª Desire Sanchez Alvarez, Juan Diego Mesa Alvarez
- * @see Productos
+ * @see Producto
  */
 
 public class Almacen {
     private String codAlmacen;
-    private Producto codigoProd;
-    private Integer cantMax;
-    private Integer cantAct;
+    private Producto codProducto;
+    private int cantMax;
+    private int cantAct;
 
     /**
      * Metodo constructor por defecto
@@ -30,6 +30,7 @@ public class Almacen {
      * @param cantAct    Cantidad actual de productos en una zona del almacen
      */
     public Almacen(String codAlmacen, Producto codigoProd, Integer cantMax, Integer cantAct) {
+        super();
         this.codAlmacen = codAlmacen;
         this.cantMax = cantMax;
         this.cantAct = cantAct;
@@ -54,29 +55,11 @@ public class Almacen {
     }
 
     /**
-     * Metodo que regresa el Codigo del producto
-     * 
-     * @return Regresa el codigo del producto
-     */
-    public Producto getCodigoProd() {
-        return codigoProd;
-    }
-
-    /**
-     * Establece el codigo del producto
-     * 
-     * @param codigoProd Codigo del producto
-     */
-    public void setCodigoProd(Producto codigoProd) {
-        this.codigoProd = codigoProd;
-    }
-
-    /**
      * Metodo que regresa la cantidad maxima de producto en una zona del almacen
      * 
      * @return Regresa la cantidad maxima de productos en una zona
      */
-    public Integer getCantMax() {
+    public int getCantMax() {
         return cantMax;
     }
 
@@ -94,7 +77,7 @@ public class Almacen {
      * 
      * @return Regresa la cantidad actual de productos en una zona
      */
-    public Integer getCantAct() {
+    public int getCantAct() {
         return cantAct;
     }
 
